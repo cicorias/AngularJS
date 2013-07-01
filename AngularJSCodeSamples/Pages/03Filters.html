@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="">
+
+<head>
+    <title>AngularJS Filters</title>
+    <script src="../Scripts/angular.min.js"></script>
+
+    <!-- Angular Filters 
+        1. filter
+        2. orderBy
+        3. orderBy - [descending order]
+        4. limitTo 
+        5. limitTo - [get data from last record]
+        6. lowercase
+        7. uppercase
+        -->
+</head>
+
+<body data-ng-init="companies = [
+                                    { name: 'Cognizant', country: 'USA'},
+                                    { name: 'Infosys', country: 'USA'},
+                                    { name: 'TCS', country: 'India'},
+                                    { name: 'Accenture', country: 'United Kingdom'}
+                                ]">
+
+    <input type="text" data-ng-model="input" />
+
+    <ul>
+        <li data-ng-repeat="company in companies | filter:input | orderBy:'country'">{{ company.name | uppercase }} - {{ company.country }} </li>
+    </ul>
+</body>
+</html>
