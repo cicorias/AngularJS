@@ -1,0 +1,16 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="">
+<head>
+    <title>AngularJS Controller Binding</title>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Controllers/SimpleController.js"></script>
+</head>
+<body>
+    <div data-ng-controller="SimpleController">
+        <h3>Techies</h3>
+        <ol>
+            <li data-ng-repeat="person in techies">{{ person.name }} </li>
+        </ol>
+    </div>
+</body>
+</html>
