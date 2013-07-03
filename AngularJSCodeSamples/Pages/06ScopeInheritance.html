@@ -1,0 +1,28 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="">
+<head>
+    <title>AngularJS - Scope Inheritance</title>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Controllers/ScopeInheritanceController.js"></script>
+</head>
+<body>
+
+    <!-- Root message property got overridden in DIVs -->
+    <!-- change message to data.message to bind scope inheritance -->
+    
+    <input type="text" data-ng-model="data.message" />
+
+    <h2> {{data.message}} </h2>
+
+    <div ng-controller="ScopeInheritanceControllerFirst">
+        <input type="text" data-ng-model="data.message" />
+        <h2>{{data.message}}</h2>
+    </div>
+
+    <div ng-controller="ScopeInheritanceControllerSecond">
+        <input type="text" data-ng-model="data.message" />
+        <h2>{{data.message}}</h2>
+    </div>
+
+</body>
+</html>
