@@ -58,10 +58,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Controllers\SimpleController.js" />
+    <Content Include="Modules\SimpleModule.js" />
     <Content Include="Pages\01Introduction.html" />
     <Content Include="Pages\02InitAndRepeatDirectives.html" />
     <Content Include="Pages\03Filters.html" />
     <Content Include="Pages\04Controller.html" />
+    <Content Include="Pages\05Modules.html" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
