@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS - Controller methods</title>
+</head>
+<body>
+    <div ng-app="">
+
+        <div ng-controller="StringUtilitiesController">
+            <input type="text" ng-model="data" />
+            <h3>{{data}}</h3>
+
+            <h3>{{reverseMessage(data)}}</h3>
+        </div>
+
+    </div>
+
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Controllers/StringUtilitiesController.js"></script>
+</body>
+</html>
