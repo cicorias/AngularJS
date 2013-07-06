@@ -62,6 +62,7 @@
     <Content Include="Controllers\StringUtilitiesController.js" />
     <Content Include="Controllers\ScopeInheritanceController.js" />
     <Content Include="Controllers\SimpleController.js" />
+    <Content Include="Modules\CustomDirectives.js" />
     <Content Include="Modules\SimpleModule.js" />
     <Content Include="Pages\01Introduction.html" />
     <Content Include="Pages\02InitAndRepeatDirectives.html" />
@@ -72,6 +73,7 @@
     <Content Include="Pages\07ControllerDataSharing.html" />
     <Content Include="Pages\08ControllerMethods.html" />
     <Content Include="Pages\09CustomFilter.html" />
+    <Content Include="Pages\10CustomDirectives.html" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
