@@ -57,6 +57,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controllers\CustomFilterController.js" />
     <Content Include="Controllers\DataSharingController.js" />
     <Content Include="Controllers\StringUtilitiesController.js" />
     <Content Include="Controllers\ScopeInheritanceController.js" />
@@ -70,6 +71,7 @@
     <Content Include="Pages\06ScopeInheritance.html" />
     <Content Include="Pages\07ControllerDataSharing.html" />
     <Content Include="Pages\08ControllerMethods.html" />
+    <Content Include="Pages\09CustomFilter.html" />
     <Content Include="Scripts\angular.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
