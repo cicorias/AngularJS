@@ -1,0 +1,15 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+</head>
+<body>
+    <h1>Customer List</h1>
+    <ul ng-repeat="customer in Customers">
+        <li> {{ customer.name }} - {{ customer.company }}</li>
+    </ul>
+
+    <a href="#/customerInsert">Add New Customer</a>
+
+</body>
+</html>
