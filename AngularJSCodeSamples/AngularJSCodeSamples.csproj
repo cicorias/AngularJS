@@ -63,6 +63,7 @@
     <Content Include="Controllers\ScopeInheritanceController.js" />
     <Content Include="Controllers\SimpleController.js" />
     <Content Include="Modules\CustomDirectives.js" />
+    <Content Include="Modules\FactoryModule.js" />
     <Content Include="Modules\RoutesModule.js" />
     <Content Include="Modules\SimpleModule.js" />
     <Content Include="Pages\01Introduction.html" />
@@ -76,6 +77,7 @@
     <Content Include="Pages\09CustomFilter.html" />
     <Content Include="Pages\10CustomDirectives.html" />
     <Content Include="Pages\11Routes.html" />
+    <Content Include="Pages\12Factory.html" />
     <Content Include="Pages\partials\customerInsert.html" />
     <Content Include="Pages\partials\customerList.html" />
     <Content Include="Scripts\angular.min.js" />

@@ -1,0 +1,17 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>AngularJS - Factory</title>
+    <script src="../Scripts/angular.min.js"></script>
+    <script src="../Modules/FactoryModule.js"></script>
+</head>
+<body>
+    <div ng-app="EmployeeModule" ng-controller="EmployeeController">
+        
+        <ul ng-repeat="emp in Employees">
+            <li>{{ emp.name }}</li>
+        </ul>
+
+    </div>
+</body>
+</html>
