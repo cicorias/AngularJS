@@ -1,0 +1,31 @@
+﻿body {
+    margin: 50px;
+    font-size: 22pt;
+}
+
+.divContainer {
+    border-style: solid;
+    border-color: white;
+    padding: 20px;
+    width: 85%;
+}
+
+#InsertNewTechieDiv{
+    background-color:lightsalmon;
+    color:black;
+}
+
+#SearchTechieDiv{
+    background-color:aquamarine;
+    color:black;
+}
+
+#TechieListDiv{
+    /*background-color:burlywood;*/
+    background-color:crimson;
+    color:white;
+}
+
+.userInput {
+    font-size: 22pt;
+}

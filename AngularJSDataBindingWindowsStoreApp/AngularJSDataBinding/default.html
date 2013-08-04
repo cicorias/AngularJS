@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html data-ng-app="">
+<head>
+    <meta charset="utf-8" />
+    <title>Data Binding Using AngularJS</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- AngularJSDataBinding references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+    <script src="js/angular.js"></script>
+</head>
+
+<body>
+    <div data-ng-controller="TechieController">
+        <div id="InsertNewTechieDiv" class="divContainer">
+            <label for="newTechieName">Name</label>
+            <input id="newTechieName" type="text" ng-model="newTechie.name" />
+            <label for="newTechieCompany">Company</label>
+            <input id="newTechieCompany" type="text" ng-model="newTechie.company" />
+            <button ng-click="addTechie()" class="userInput">Save</button>
+        </div>
+        <br />
+
+        <div id="SearchTechieDiv" class="divContainer">
+            <label for="SearchTechie">Search</label>
+            <input id="SearchTechie" type="text" data-ng-model="input" class="userInput" />
+        </div>
+
+        <br />
+
+        <div id="TechieListDiv" class="divContainer">
+            <ol>
+                <li data-ng-repeat="person in Techies | filter:input">{{ person.name }} <em>{{person.company}} </em></li>
+            </ol>
+        </div>
+    </div>
+</body>
+</html>
