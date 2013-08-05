@@ -8,22 +8,22 @@
     border-color: white;
     padding: 20px;
     width: 85%;
+    height:90%;
 }
 
-#InsertNewTechieDiv{
-    background-color:lightsalmon;
+#InsertNewEmployeeDiv{
+    background-color:mediumseagreen;
     color:black;
 }
 
-#SearchTechieDiv{
-    background-color:aquamarine;
+#SearchEmployeeDiv{
+    background-color:mediumseagreen;
     color:black;
 }
 
-#TechieListDiv{
-    /*background-color:burlywood;*/
-    background-color:crimson;
-    color:white;
+#SaveButton{
+    color:black;
+    border-color:black;
 }
 
 .userInput {

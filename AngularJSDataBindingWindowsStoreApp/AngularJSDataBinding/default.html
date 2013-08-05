@@ -16,26 +16,31 @@
 </head>
 
 <body>
-    <div data-ng-controller="TechieController">
-        <div id="InsertNewTechieDiv" class="divContainer">
-            <label for="newTechieName">Name</label>
-            <input id="newTechieName" type="text" ng-model="newTechie.name" />
-            <label for="newTechieCompany">Company</label>
-            <input id="newTechieCompany" type="text" ng-model="newTechie.company" />
-            <button ng-click="addTechie()" class="userInput">Save</button>
+    <div data-ng-controller="EmployeeController">
+        <div id="InsertNewEmployeeDiv" class="divContainer">
+            <label for="newEmployeeName">Name</label>
+            <input id="newEmployeeName" type="text" ng-model="newEmployee.name" />
+            <label for="newEmployeeCompany">Company</label>
+            <input id="newEmployeeCompany" type="text" ng-model="newEmployee.company" />
+            <button id="SaveButton" ng-click="addEmployee()" class="userInput">Save</button>
         </div>
         <br />
 
-        <div id="SearchTechieDiv" class="divContainer">
-            <label for="SearchTechie">Search</label>
-            <input id="SearchTechie" type="text" data-ng-model="input" class="userInput" />
+        <div class="divContainer">
+            You are adding - {{newEmployee.name}} {{newEmployee.company}}
+        </div>
+        <br />
+
+        <div id="SearchEmployeeDiv" class="divContainer">
+            <label for="SearchEmployee">Search</label>
+            <input id="SearchEmployee" type="text" data-ng-model="input" class="userInput" />
         </div>
 
         <br />
 
-        <div id="TechieListDiv" class="divContainer">
+        <div id="EmployeeListDiv" class="divContainer">
             <ol>
-                <li data-ng-repeat="person in Techies | filter:input">{{ person.name }} <em>{{person.company}} </em></li>
+                <li data-ng-repeat="person in Employees | filter:input">{{ person.name }} - {{person.company}} </li>
             </ol>
         </div>
     </div>
