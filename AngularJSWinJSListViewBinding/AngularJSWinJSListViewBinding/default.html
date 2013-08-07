@@ -1,5 +1,5 @@
 ﻿<!DOCTYPE html>
-<html>
+<html ng-app="">
 <head>
     <meta charset="utf-8" />
     <title>WinJS ListView Binding Using AngularJS</title>
@@ -13,8 +13,9 @@
     <link href="/css/default.css" rel="stylesheet" />
     <script src="/js/default.js"></script>
     <script src="js/angular.js"></script>
+    <script src="js/employeeController.js"></script>
 </head>
-<body>
+<body ng-controller="EmployeeController">
     <div id="employeesListTemplate" data-win-control="WinJS.Binding.Template">
         <div class="container">
             <div data-win-bind="innerText:name"></div>
@@ -29,9 +30,11 @@
 
     <div id="appBar" data-win-control="WinJS.UI.AppBar" data-win-options="">
         <button
+            ng-click="addEmployee()"
             data-win-control="WinJS.UI.AppBarCommand"
             data-win-options="{id:'cmdAdd',label:'Add',icon:'add',
-                section:'global',tooltip:'Add item'}">
+                section:'global',tooltip:'Add item'}" 
+            >
         </button>
 
         <button
