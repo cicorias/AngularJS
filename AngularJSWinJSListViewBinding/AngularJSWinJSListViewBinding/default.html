@@ -11,9 +11,9 @@
 
     <!-- AngularJSWinJSListViewBinding references -->
     <link href="/css/default.css" rel="stylesheet" />
-    <script src="/js/default.js"></script>
     <script src="js/angular.js"></script>
-    <script src="js/employeeController.js"></script>
+    <script src="/js/default.js"></script>
+    
 </head>
 <body ng-controller="EmployeeController">
     <div id="employeesListTemplate" data-win-control="WinJS.Binding.Template">
@@ -36,13 +36,6 @@
                 section:'global',tooltip:'Add item'}" 
             >
         </button>
-
-        <button
-            data-win-control="WinJS.UI.AppBarCommand"
-            data-win-options="{id:'cmdRemove',label:'Remove',icon:'remove',
-                section:'global',tooltip:'Remove item'}">
-        </button>
-
     </div>
 </body>
 </html>
