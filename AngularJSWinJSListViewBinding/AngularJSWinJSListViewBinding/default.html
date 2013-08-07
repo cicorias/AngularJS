@@ -15,6 +15,31 @@
     <script src="js/angular.js"></script>
 </head>
 <body>
-    <p>Content goes here</p>
+    <div id="employeesListTemplate" data-win-control="WinJS.Binding.Template">
+        <div class="container">
+            <div data-win-bind="innerText:name"></div>
+            <div data-win-bind="innerText:company"></div>
+        </div>
+    </div>
+
+    <div id="employeesListView"
+        data-win-control="WinJS.UI.ListView"
+        data-win-options="{itemTemplate: select('#employeesListTemplate')}">
+    </div>
+
+    <div id="appBar" data-win-control="WinJS.UI.AppBar" data-win-options="">
+        <button
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'cmdAdd',label:'Add',icon:'add',
+                section:'global',tooltip:'Add item'}">
+        </button>
+
+        <button
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'cmdRemove',label:'Remove',icon:'remove',
+                section:'global',tooltip:'Remove item'}">
+        </button>
+
+    </div>
 </body>
 </html>

@@ -1,23 +1,28 @@
 ﻿(function () {
     "use strict";
 
-    WinJS.Binding.optimizeBindingReferences = true;
-
     var app = WinJS.Application;
-    var activation = Windows.ApplicationModel.Activation;
+
+    var employees = [
+        { name: 'Scott Allen', company: 'OdeToCode' },
+        { name: 'Dan Wahlin', company: 'The Wahlin Group' },
+        { name: 'Scott Hanselman', company: 'Microsoft' },
+        { name: 'John Papa', company: 'Pluralsight' },
+    ];
+
+    WinJS.Namespace.define("Data", {
+        employees: employees
+    });
 
     app.onactivated = function (args) {
-        if (args.detail.kind === activation.ActivationKind.launch) {
-            if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
-                // TODO: This application has been newly launched. Initialize
-                // your application here.
-            } else {
-                // TODO: This application has been reactivated from suspension.
-                // Restore application state here.
-            }
-            args.setPromise(WinJS.UI.processAll());
-        }
+        WinJS.UI.processAll();
     };
+
+    app.onready = function () {
+        var dataList = new WinJS.Binding.List(Data.employees);
+        var employeesList = document.getElementById('employeesListView').winControl;
+        employeesList.itemDataSource = dataList.dataSource;
+    }
 
     app.start();
 })();

@@ -1,14 +1,10 @@
-﻿body {
+﻿body{
+    margin:50px;
 }
-
-@media screen and (-ms-view-state: fullscreen-landscape) {
-}
-
-@media screen and (-ms-view-state: filled) {
-}
-
-@media screen and (-ms-view-state: snapped) {
-}
-
-@media screen and (-ms-view-state: fullscreen-portrait) {
+.win-item, .container {
+    width: 250px;
+    height: 75px;
+    color:black;
+    background-color:lightsalmon;
+    padding:3px;
 }
