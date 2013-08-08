@@ -4,7 +4,7 @@
     var dataList;
     var employeesList;
 
-    $scope.employees = [
+    employees = [
         { name: 'Scott Allen', company: 'OdeToCode' },
         { name: 'Dan Wahlin', company: 'The Wahlin Group' },
         { name: 'Scott Hanselman', company: 'Microsoft' },
@@ -16,13 +16,16 @@
     };
 
     app.onready = function () {
-        dataList = new WinJS.Binding.List($scope.employees);
+        dataList = new WinJS.Binding.List(employees);
         employeesList = document.getElementById('employeesListView').winControl;
         employeesList.itemDataSource = dataList.dataSource;
     }
-    
+
     $scope.addEmployee = function () {
-        dataList.push({ name: 'A', company: 'B' });
+        dataList.push(
+            { name: 'Prasad Honrao', company: 'Cognizant' },
+            { name: 'Scott Guthrie', company: 'Microsoft' }
+            );
     }
 
     app.start();
