@@ -1,2 +1,1 @@
-AngularJSCodeSamples
-====================
+AngularJS Code Samples
